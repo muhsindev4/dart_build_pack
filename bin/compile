@@ -92,11 +92,10 @@ pwd
 
 for filename in `find . -name pubspec.yaml | grep -v dart-sdk | grep -v pub-cache`; do
     pub_dir=`dirname $filename`
-    message "-----> Current Dir2===:"
-     pwd
     message "*** Found pubspec.yaml in $BUILD_DIR/$pub_dir"
     cd $BUILD_DIR/$pub_dir
-
+     message "-----> Current Dir2===:"
+     pwd
     message "*** Running pub get"
 
     /app/dart-sdk/bin --version
