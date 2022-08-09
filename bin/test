@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+#set -x
+unset GIT_DIR
+
+
+
+function message {
+  echo "$1"
+  sync
+}
+
+message "-------------------------------"
+MACHINE=`uname -a`
+message "-----> Welcome, this machine is: $MACHINE"
