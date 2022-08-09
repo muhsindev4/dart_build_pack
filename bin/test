@@ -11,6 +11,5 @@ function message {
   sync
 }
 
-message "-------------------------------"
-MACHINE=`uname -a`
-message "-----> Welcome, this machine is: $MACHINE"
+pwd
+message "-------------------------------$pwd"
